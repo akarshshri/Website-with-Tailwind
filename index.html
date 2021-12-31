@@ -1,17 +1,64 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>TailWind Website</title>
+    <style>
+      
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: sans-serif;
+            font-size: 160%;
+        }
+
+
+
+        .diagBG {
+            background-color: #34ADFF;
+            background-image: -webkit-linear-gradient(108deg, #fcfcfc 50%, #4CBFFF 35%);
+          
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+
+<body class="diagBG" style=" ">
+    <nav class="my-10 mx-10 py-6 bg-white rounded-2xl flex justify-between text-black">
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/Nissan-Logo.png" class="h-9 w-150 flex" alt="">
+        <ul class="flex px-4 justify-center pt-1">
+            <li class="mx-4"><b>Home</b></li>
+            <li class="mx-4"><b>About</b></li>
+            <li class="mx-4"><b>Contact</b></li>
         </ul>
+        <button class="bg-yellow-400 relative float-right  rounded-2xl px-3" style=" margin-right: 1.5rem;">BUY
+            NOW</button>
     </nav>
+    <div class="">
+        <div class="main mx-3 py-24 flex ">
+            <div class="c-left col">
+                Left Side
+            </div>
+            <div class="c-middle col">
+                <img src="https://nextluxury.com/wp-content/uploads/Top-75-Best-Manly-Hobbies-For-Men-1.jpg" class=" center w-96 h-96 rounded-full" alt="">
+            </div>
+            <div class="c-right col">
+                Right Side
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
