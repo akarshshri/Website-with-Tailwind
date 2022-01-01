@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>TailWind Website</title>
     <style>
-      
+        .buyButton {
+            display: inline-block;
+            border-radius: 4px;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 28px;
+
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .buyButton span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .buyButton span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -40px;
+            transition: 0.15s;
+        }
+
+        .buyButton:hover span {
+            padding-right: 25px;
+        }
+
+        .buyButton:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
 
         body {
             margin: 0;
@@ -21,9 +60,9 @@
 
 
         .diagBG {
-            background-color: #34ADFF;
-            background-image: -webkit-linear-gradient(108deg, #fcfcfc 50%, #4CBFFF 35%);
-          
+            background-color: #ffffff;
+            background-image: -webkit-linear-gradient(108deg, #fcfcfc 50%, #2cb4b4 35%);
+
         }
 
         .center {
@@ -35,16 +74,17 @@
     </style>
 </head>
 
-<body class="diagBG" style=" ">
-    <nav class="my-10 mx-10 py-6 bg-white rounded-2xl flex justify-between text-black">
+<body class="diagBG " style=" ">
+    <nav class="my-10 mx-10 py-6 bg-white rounded-2xl flex justify-between text-black ">
         <img src="https://logos-world.net/wp-content/uploads/2020/04/Nissan-Logo.png" class="h-9 w-150 flex" alt="">
         <ul class="flex px-4 justify-center pt-1">
             <li class="mx-4"><b>Home</b></li>
             <li class="mx-4"><b>About</b></li>
             <li class="mx-4"><b>Contact</b></li>
         </ul>
-        <button class="bg-yellow-400 relative float-right  rounded-2xl px-3" style=" margin-right: 1.5rem;">BUY
-            NOW</button>
+        <button class="bg-yellow-400 relative float-right  rounded-3xl px-4 buyButton"
+            style=" margin-right: 1.5rem;"><span>BUY
+                NOW</span></button>
     </nav>
     <div class="">
         <div class="main mx-3 py-24 flex ">
@@ -52,7 +92,8 @@
                 Left Side
             </div>
             <div class="c-middle col">
-                <img src="https://nextluxury.com/wp-content/uploads/Top-75-Best-Manly-Hobbies-For-Men-1.jpg" class=" center w-96 h-96 rounded-full" alt="">
+                <img src="https://nextluxury.com/wp-content/uploads/Top-75-Best-Manly-Hobbies-For-Men-1.jpg"
+                    class="rounded-full center" style="max-width: 350px; height: 350px;" alt="">
             </div>
             <div class="c-right col">
                 Right Side
@@ -62,3 +103,9 @@
 </body>
 
 </html>
+
+
+
+
+
+w-96 h-96 rounded-full
