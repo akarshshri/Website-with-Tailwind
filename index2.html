@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MR Website</title>
-   <style> 
+    <style>
         .buyButton {
             display: inline-block;
             border-radius: 4px;
@@ -74,61 +74,67 @@
             margin-right: auto;
 
         }
-    </style> 
+
+        h1{
+            color:black
+        }
+
+        p{
+            color: black;
+        }
+ 
+    </style>
 </head>
 
 <body class="diagBG  ">
     <!--Nav for SM+ -->
     <div class="  px-4 py-2 sm:my-8 sm:mx-14 ">
         <nav class="bg-white text-lg text-black hidden sm:flex justify-between min-w-fit rounded-3xl sm:py-4">
-            <img src="https://logos-world.net/wp-content/uploads/2020/04/Nissan-Logo.png" class="h-9 w-150 align-middle " alt="">
-            <ul class="sm:flex justify-around align-middle pt-1">
-                <li class="px-2 align-middle" >Home</li>
-                <li class="px-2 align-middle" >About</li>
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/Nissan-Logo.png"
+                class="h-9 w-150 align-middle " alt="">
+            <ul class="sm:flex justify-around align-middle pt-1 pl-12 grow-0">
+                <li class="px-2 align-middle">Home</li>
+                <li class="px-2 align-middle">About</li>
                 <li class="px-2 align-middle">Contact</li>
             </ul>
-            <div ><button class="bg-yellow-400 relative float-right rounded-3xl pt-1 px-4 buyButton text-base "
-                style=" margin-right: 1rem;" id="buy"><span>BUY
-                    NOW</span></button>
+            <div><button class="bg-yellow-400 relative float-right rounded-3xl pt-1 px-2 buyButton text-base "
+                    style=" margin-right: 1rem;" id="buy"><span>BUY
+                        NOW</span></button>
             </div>
         </nav>
     </div>
-    
+
     <!-- Nav for Mobile -->
 
     <nav class="  mx-2 my-1 p-2 sm:hidden bg-white rounded-3xl text-black justify-self-end grow-0">
-        <div class="flex justify-between">  
-            <img src="https://logos-world.net/wp-content/uploads/2020/04/Nissan-Logo.png" class="h-10 w-150  items-center" alt="">
+        <div class="flex justify-between">
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/Nissan-Logo.png"
+                class="h-10 w-150  items-center" alt="">
             <p class="font-semibold text-slate-500 align-middle justify-center">NISSAN</p>
 
             <div class="flex content-end flow-root relative pr-2 pt-1.5">
                 <button class="outline-none mobile-menu-button right-0">
-                <svg class=" w-6 h-6 text-[#2cb4b4] hover:text-stone-500  "
-                    x-show="!showMenu"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor" 
-                >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+                    <svg class=" w-6 h-6 text-[#2cb4b4] hover:text-stone-500  " x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
-    
-    <div class="hidden mobile-menu sm:hidden grow-0 bg-black bg-opacity-50 absolute rounded-3xl ml-3 pt-2 pb-2 w-11/12 ">
-        <ul class=" flex justify-between ">
-            <li class="pl-2 align-middle" >Home</li>
-            <li class="align-middle" >About</li>
-            <li class="pr-2 align-middle" >Contact</li>
+
+    <div
+        class="hidden mobile-menu sm:hidden grow-0 bg-black bg-opacity-50 absolute rounded-3xl ml-3 pt-2 pb-2 w-11/12 ">
+        <ul class=" flex justify-around grow-0">
+            <li class="pl-2 align-middle">Home</li>
+            <li class="align-middle">About</li>
+            <li class="pr-2 align-middle">Contact</li>
         </ul>
     </div>
 
 
- 
+
     <script>
         const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
@@ -139,39 +145,32 @@
     </script>
 
 
-<!--
-    Body Content
--->
+    <!--Body Content-->
 
-<div class="mt-3 ">
-    <!--For SM+-->
-    <div class=" hidden sm:flex justify-between">
-        <div class="">
-            Left Side
+    <div class="mt-3">
+        <!--For SM+-->
+        <div class=" hidden sm:flex justify-center ml-5 mr-5 mt-2 p-2  text-black max-h-min grow">
+            <div class=" grid-rows-3 gap-1 justify-evenly pt-8 grid">
+                <div class="row-span-1 text-right grow"> Think More</div>
+                <div class="row-span-1 flex justify-items-start items-center pr-12">Practice More</div>
+                <div class="row-span-1 text-right grow flex justify-self-end items-end">Learn More</div>
+            </div>
+            <div class="">
+                <img src="https://nextluxury.com/wp-content/uploads/Top-75-Best-Manly-Hobbies-For-Men-1.jpg"
+                    class="rounded-full center static  pl-4 pr-4" style="max-width: 343px; height: 343px;" alt="">
+            </div>
+            <div class="grid grid-rows-3 gap-1 justify-evenly pt-8">
+                <div class="row-span-1  "> Think More</div>
+                <div class="row-span-1 flex justify-items-start items-center pl-12 grow">Practice More</div>
+                <div class="row-span-1 flex justify-start items-end">Learn More</div>
+            </div>
         </div>
-        <div class="">
+        <!--For Mobile-->
+        <div class="sm:hidden">
             <img src="https://nextluxury.com/wp-content/uploads/Top-75-Best-Manly-Hobbies-For-Men-1.jpg"
-                class="rounded-full center" style="max-width: auto; height: auto;" alt="">
-        </div>
-        <div class="">
-            Right Side
+                class="rounded-full center m-auto mt-4" style="max-width: 275px; height: 275px;" alt="">
         </div>
     </div>
-    <!--For Mobile-->
-    <div class="sm:hidden">
-        <img src="https://nextluxury.com/wp-content/uploads/Top-75-Best-Manly-Hobbies-For-Men-1.jpg"
-                class="rounded-full center" style="max-width: 275px; height: 275px;" alt="">
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
